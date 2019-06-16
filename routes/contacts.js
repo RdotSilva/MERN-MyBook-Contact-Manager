@@ -17,4 +17,13 @@ router.post("/", (req, res) => {
 	res.send("Add new contact");
 });
 
+// @route   PUT api/contacts/:id
+// @desc   Update contact
+// @access  Private
+router.put("/:id", (req, res) => {
+	res.send("Update contact");
+});
+
+module.exports = router;
+
 module.exports = router;
