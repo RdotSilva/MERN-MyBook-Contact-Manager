@@ -12,6 +12,10 @@ const ContactSchema = mongoose.Schema({
 	email: {
 		type: String,
 		required: true
+	},
+	phone: {
+		type: String,
+		default: "personal"
 	}
 });
 
