@@ -19,7 +19,11 @@ const ContactSchema = mongoose.Schema({
 	type: {
 		type: String,
 		default: "personal"
+	},
+	date: {
+		type: Date,
+		default: Date.now
 	}
 });
 
-module.exports = mongoose.model("user", ContactSchema);
+module.exports = mongoose.model("contact", ContactSchema);
