@@ -36,7 +36,7 @@ router.post(
 				.isEmpty()
 		]
 	],
-	(req, res) => {
+	async (req, res) => {
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) {
 			return res.status(400).json({ errors: errors.array() });
@@ -52,7 +52,12 @@ router.post(
 				type,
 				user: req.user.id
 			});
-		} catch (error) {}
+			const contact = await newContact.save();
+			res.json(contact);
+		} catch (error) {
+			console.error(error.message);
+			res.status(500).send("Server Error");
+		}
 	}
 );
 
