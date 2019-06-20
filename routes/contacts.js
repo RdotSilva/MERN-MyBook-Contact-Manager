@@ -26,9 +26,18 @@ module.exports = router;
 // @route   POST api/contacts
 // @desc    Add new contact
 // @access  Private
-router.post("/", (req, res) => {
-	res.send("Add new contact");
-});
+router.post(
+	"/",
+	[
+		auth,
+		[
+			check("name", "Name is required")
+				.not()
+				.isEmpty()
+		]
+	],
+	(req, res) => {}
+);
 
 // @route   PUT api/contacts/:id
 // @desc   Update contact
