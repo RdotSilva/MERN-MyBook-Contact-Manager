@@ -68,6 +68,11 @@ router.put("/:id", auth, async (req, res) => {
 	const { name, email, phone, type } = req.body;
 
 	// Build contact object
+	const contactFields = {};
+	if (name) contactsField.name = name;
+	if (email) contactsField.email = email;
+	if (phone) contactsField.phone = phone;
+	if (type) contactsField.type = type;
 });
 
 // @route   DELETE api/contacts/:id
