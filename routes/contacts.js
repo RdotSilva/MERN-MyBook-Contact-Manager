@@ -90,7 +90,10 @@ router.put("/:id", auth, async (req, res) => {
 		);
 
 		res.json(contact);
-	} catch (error) {}
+	} catch (error) {
+		console.error(error.message);
+		res.status(500).send("Server Error");
+	}
 });
 
 // @route   DELETE api/contacts/:id
