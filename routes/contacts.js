@@ -73,6 +73,11 @@ router.put("/:id", auth, async (req, res) => {
 	if (email) contactsField.email = email;
 	if (phone) contactsField.phone = phone;
 	if (type) contactsField.type = type;
+
+	try {
+		let contact = await Contact.findById(req.params.id);
+		if (!contact) return res.status(404).json({ msg: "Contact not found" });
+	} catch (error) {}
 });
 
 // @route   DELETE api/contacts/:id
