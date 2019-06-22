@@ -69,10 +69,10 @@ router.put("/:id", auth, async (req, res) => {
 
 	// Build contact object
 	const contactFields = {};
-	if (name) contactsField.name = name;
-	if (email) contactsField.email = email;
-	if (phone) contactsField.phone = phone;
-	if (type) contactsField.type = type;
+	if (name) contactFields.name = name;
+	if (email) contactFields.email = email;
+	if (phone) contactFields.phone = phone;
+	if (type) contactFields.type = type;
 
 	try {
 		let contact = await Contact.findById(req.params.id);
@@ -88,7 +88,6 @@ router.put("/:id", auth, async (req, res) => {
 			{ $set: contactFields },
 			{ new: true }
 		);
-
 		res.json(contact);
 	} catch (error) {
 		console.error(error.message);
