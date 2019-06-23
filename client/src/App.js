@@ -8,7 +8,11 @@ const App = () => {
 		<Router>
 			<Fragment className="App">
 				<Navbar />
-				My App
+				<div className="container">
+					<Switch>
+						<Route exact path="/" component={Home} />
+					</Switch>
+				</div>
 			</Fragment>
 		</Router>
 	);
