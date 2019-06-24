@@ -28,6 +28,10 @@ const ContactItem = ({ contact }) => {
 					</li>
 				)}
 			</ul>
+			<p>
+				<button className="btn btn-dark btn-sm">Edit</button>
+				<button className="btn btn-danger btn-sm">Delete</button>
+			</p>
 		</div>
 	);
 };
