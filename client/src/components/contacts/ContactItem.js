@@ -16,6 +16,18 @@ const ContactItem = ({ contact }) => {
 					{type.charAt(0).toUpperCase() + type.slice(1)}
 				</span>
 			</h3>
+			<ul className="list">
+				{email && (
+					<li>
+						<i className="fas fa-envelope-open">{email}</i>
+					</li>
+				)}
+				{phone && (
+					<li>
+						<i className="fas fa-phone">{phone}</i>
+					</li>
+				)}
+			</ul>
 		</div>
 	);
 };
