@@ -34,6 +34,14 @@ const ContactForm = () => {
 				value={phone}
 				onChange={onChange}
 			/>
+			<h5>Contact Type</h5>
+			<input
+				type="radio"
+				name="type"
+				value="personal"
+				checked={type === "personal"}
+			/>
+			Personal{" "}
 		</form>
 	);
 };
