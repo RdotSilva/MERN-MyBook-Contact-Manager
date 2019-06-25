@@ -42,6 +42,20 @@ const ContactForm = () => {
 				checked={type === "personal"}
 			/>
 			Personal{" "}
+			<input
+				type="radio"
+				name="type"
+				value="professional"
+				checked={type === "professional"}
+			/>
+			Professional{" "}
+			<div>
+				<input
+					type="submit"
+					value="Add Contact"
+					className="btn btn-primary btn-block"
+				/>
+			</div>
 		</form>
 	);
 };
