@@ -15,9 +15,16 @@ const ContactForm = () => {
 			<h2 className="text-primary">Add Contact</h2>
 			<input
 				type="text"
-				placeholder="name"
+				placeholder="Name"
 				name="name"
 				value={name}
+				onChange={onChange}
+			/>
+			<input
+				type="email"
+				placeholder="Email"
+				name="email"
+				value={email}
 				onChange={onChange}
 			/>
 		</form>
