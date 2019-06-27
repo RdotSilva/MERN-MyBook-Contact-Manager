@@ -33,7 +33,10 @@ const ContactForm = () => {
 
 	const onSubmit = e => {
 		e.preventDeault();
-		addContact(contact);
+		if (current === null) {
+			addContact(contact);
+		} else {
+		}
 		setContact({
 			name: "",
 			email: "",
