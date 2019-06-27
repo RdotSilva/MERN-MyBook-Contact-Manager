@@ -30,7 +30,7 @@ const ContactState = props => {
 				type: "personal"
 			},
 			{
-				id: 1,
+				id: 3,
 				name: "Fake Girlme",
 				email: "fakegirl@fake.com",
 				phone: "333-111-1111",
