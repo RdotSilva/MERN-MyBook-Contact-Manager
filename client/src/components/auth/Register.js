@@ -19,7 +19,13 @@ const Register = () => {
 
 	const onSubmit = e => {
 		e.preventDefault();
-		console.log("Register Submit");
+		if (name === "" || email === "" || password === "") {
+			setAlert("Please enter all fields", "danger");
+		} else if (password !== password2) {
+			setAlert("Passwords do not match", "danger");
+		} else {
+			console.log("Register Submit");
+		}
 	};
 
 	return (
