@@ -20,5 +20,17 @@ const AuthState = props => {
 		error: null
 	};
 
-	
+	const [state, dispatch] = useReducer(authReducer, initialState);
+
+	// Load User
+
+	// Register User
+
+	// Login User
+
+	// Logout
+
+	// Clear Errors
+
+
 export default AuthState;
