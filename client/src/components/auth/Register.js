@@ -32,6 +32,7 @@ const Register = () => {
 					<label htmlFor="password2">Confirm Password</label>
           <input type='password2' name='password2' value={password2} onChange={} />
 				</div>
+        <input type='submit' value='Register' className='btn btn-primary btn-block' />
 			</form>
 		</div>
 	);
