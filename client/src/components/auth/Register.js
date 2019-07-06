@@ -28,6 +28,10 @@ const Register = () => {
 					<label htmlFor="password">Password</label>
           <input type='password' name='password' value={password} onChange={} />
 				</div>
+        <div className="form-group">
+					<label htmlFor="password2">Confirm Password</label>
+          <input type='password2' name='password2' value={password2} onChange={} />
+				</div>
 			</form>
 		</div>
 	);
