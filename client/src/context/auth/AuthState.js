@@ -11,3 +11,14 @@ import {
 	LOGOUT,
 	CLEAR_ERRORS
 } from "../types";
+
+const AuthState = props => {
+	const initialState = {
+		token: localStorage.getItem("token"),
+		isAuthenticated: null,
+		loading: true,
+		error: null
+	};
+
+	
+export default AuthState;
