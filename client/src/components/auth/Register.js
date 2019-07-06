@@ -20,6 +20,10 @@ const Register = () => {
 					<label htmlFor="name">Name</label>
           <input type='text' name='name' value={name} onChange={} />
 				</div>
+        <div className="form-group">
+					<label htmlFor="email">Email</label>
+          <input type='email' name='email' value={email} onChange={} />
+				</div>
 			</form>
 		</div>
 	);
