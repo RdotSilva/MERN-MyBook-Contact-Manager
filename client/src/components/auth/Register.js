@@ -8,7 +8,9 @@ const Register = () => {
 		password2: ""
 	});
 
-	const { name, email, password, password2 } = user;
+  const { name, email, password, password2 } = user;
+  
+  const onChange = e => setUser({...user, [e.target.name]: e.target.value})
 
 	return (
 		<div className="form-container">
