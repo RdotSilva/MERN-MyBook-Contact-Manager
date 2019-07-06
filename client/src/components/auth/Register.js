@@ -10,7 +10,19 @@ const Register = () => {
 
 	const { name, email, password, password2 } = user;
 
-	return <div />;
+	return (
+		<div className="form-container">
+			<h1>
+				Account <span className="text-primary">Register</span>
+			</h1>
+			<form>
+				<div className="form-group">
+					<label htmlFor="name">Name</label>
+          <input type='text' name='name' value={name} onChange={} />
+				</div>
+			</form>
+		</div>
+	);
 };
 
 export default Register;
