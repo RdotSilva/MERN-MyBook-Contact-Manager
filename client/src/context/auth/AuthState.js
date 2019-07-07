@@ -52,6 +52,7 @@ const AuthState = props => {
 	};
 
 	// Login User
+	const login = () => console.log("login");
 
 	// Logout
 
