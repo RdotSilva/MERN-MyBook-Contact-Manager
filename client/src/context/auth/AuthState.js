@@ -56,6 +56,8 @@ const AuthState = props => {
 
 	// Logout
 
+	const logout = () => console.log("logout");
+
 	// Clear Errors
 
 	return (
