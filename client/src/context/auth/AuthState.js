@@ -25,6 +25,7 @@ const AuthState = props => {
 	const [state, dispatch] = useReducer(authReducer, initialState);
 
 	// Load User
+	const loadUser = () => console.log("loaduser");
 
 	// Register User
 	const register = async formData => {
@@ -63,7 +64,8 @@ const AuthState = props => {
 				isAuthenticated: state.isAuthenticated,
 				loading: state.loading,
 				user: state.user,
-				error: state.error
+				error: state.error,
+				register
 			}}
 		>
 			{props.children}
