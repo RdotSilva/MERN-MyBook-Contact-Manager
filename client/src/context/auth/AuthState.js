@@ -55,10 +55,10 @@ const AuthState = props => {
 	const login = () => console.log("login");
 
 	// Logout
-
 	const logout = () => console.log("logout");
 
 	// Clear Errors
+	const clearErrors = () => console.log("clearerrors");
 
 	return (
 		<AuthContext.Provider
