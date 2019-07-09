@@ -10,6 +10,18 @@ const Login = () => {
 
 	const { login, error, clearErrors, isAuthenticated } = authContext;
 
+	useEffect(() => {
+		if (isAuthenticated) {
+			// Redirect if user is authenticated.
+			props.history.push("/");
+		}
+		if (error === "Invalid Credentials") {
+			setAlert(error, "danger");
+			clearErrors();
+		}
+		// eslint-disable-next-line
+	}, [error, isAuthenticated, props.history]);
+
 	const [user, setUser] = useState({
 		email: "",
 		password: ""
