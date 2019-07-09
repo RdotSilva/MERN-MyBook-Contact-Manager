@@ -19,6 +19,7 @@ export default (state, action) => {
 				user: action.payload
 			};
 		case REGISTER_SUCCESS:
+		case LOGIN_SUCCESS:
 			// Get token from payload and set it to local storage
 			localStorage.setItem("token", action.payload.token);
 			return {
