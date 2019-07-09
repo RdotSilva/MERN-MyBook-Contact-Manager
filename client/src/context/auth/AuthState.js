@@ -59,6 +59,8 @@ const AuthState = props => {
 				// res.data is going to be the token sent from the api route
 				payload: res.data
 			});
+
+			loadUser();
 		} catch (err) {
 			dispatch({
 				type: REGISTER_FAIL,
