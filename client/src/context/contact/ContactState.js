@@ -114,7 +114,8 @@ const ContactState = props => {
 				clearCurrent,
 				filterContacts,
 				clearFilter,
-				getContacts
+				getContacts,
+				clearContacts
 			}}
 		>
 			{props.children}
