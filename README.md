@@ -33,7 +33,7 @@ npm run dev
 ## Screenshots
 
 ![Login](https://i.imgur.com/SObswkU.png "Login")
-![Register](https://i.imgur.com/SObswkU.png "Register")
+![Register](https://i.imgur.com/O9bIkMr.png "Register")
 ![Contact List](https://i.imgur.com/9aTRPNc.png "Contact List")
 
 ## Built With
