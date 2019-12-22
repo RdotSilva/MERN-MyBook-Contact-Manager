@@ -37,7 +37,9 @@ const ContactItem = ({ contact }) => {
         )}
         {phone && (
           <li>
-            <i className="fas fa-phone">{phone}</i>
+            <i className="fas fa-phone">
+              <a href={"tel:" + phone}>{phone}</a>
+            </i>
           </li>
         )}
       </ul>
