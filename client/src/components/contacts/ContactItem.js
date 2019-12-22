@@ -30,15 +30,19 @@ const ContactItem = ({ contact }) => {
       <ul className="list">
         {email && (
           <li>
-            <i className="far fa-envelope">
-              <a href={"mailto:" + email}>{email}</a>
+            <i className="fas fa-envelope">
+              <a className="m" href={"mailto:" + email}>
+                {email}
+              </a>
             </i>
           </li>
         )}
         {phone && (
           <li>
             <i className="fas fa-phone-volume">
-              <a href={"tel:" + phone}>{phone}</a>
+              <a className="m" href={"tel:" + phone}>
+                {phone}
+              </a>
             </i>
           </li>
         )}
