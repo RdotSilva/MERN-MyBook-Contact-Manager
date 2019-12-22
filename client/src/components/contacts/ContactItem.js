@@ -54,7 +54,7 @@ const ContactItem = ({ contact }) => {
         >
           Edit
         </button>
-        <button className="btn btn-danger btn-sm" onClick={onDelete}>
+        <button className="btn btn-danger btn-sm m" onClick={onDelete}>
           Delete
         </button>
       </p>
