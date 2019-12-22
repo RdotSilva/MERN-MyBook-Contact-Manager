@@ -30,7 +30,7 @@ const ContactItem = ({ contact }) => {
       <ul className="list">
         {email && (
           <li>
-            <i className="fas fa-envelope-open">
+            <i className="far fa-envelope">
               <a href={"mailto:" + email}>{email}</a>
             </i>
           </li>
