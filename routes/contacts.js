@@ -66,7 +66,7 @@ router.post(
 // @desc   Update contact
 // @access  Private
 router.put("/:id", auth, async (req, res) => {
-  const { name, email, phone, type } = req.body;
+  const { name, email, address, phone, type } = req.body;
 
   // Build contact object
   const contactFields = {};
