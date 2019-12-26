@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import ContactContext from "../../context/contact/contactContext";
+import moment from "moment";
 
 const ContactItem = ({ contact }) => {
   const contactContext = useContext(ContactContext);
   const { deleteContact, setCurrent, clearCurrent } = contactContext;
 
-  const { _id, name, email, address, phone, type } = contact;
+  const { _id, name, email, address, phone, type, date } = contact;
 
   const onDelete = () => {
     deleteContact(_id);
@@ -27,6 +28,9 @@ const ContactItem = ({ contact }) => {
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </span>
       </h3>
+      <h4 className="text-primary text-left">
+        {moment(date).format("MM/DD/YYYY")}
+      </h4>
       <ul className="list">
         {email && (
           <li>
