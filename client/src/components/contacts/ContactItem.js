@@ -48,8 +48,12 @@ const ContactItem = ({ contact }) => {
         )}
         {address && (
           <li>
-            <i className="fas fa-phone-volume">
-              <a className="m" href={"tel:" + phone}>
+            <i className="fas fa-map">
+              <a
+                className="m"
+                href={"http://maps.google.com/?q=" + address}
+                target="_blank"
+              >
                 {address}
               </a>
             </i>
